@@ -68,4 +68,14 @@ public class MusicOrganizer
             System.out.println("El indice debe estar contenido entre el número 0 y el número " + (files.size() -1));
         }
     }
+    
+    public boolean validIndex(int index)
+    {
+        boolean temp = true;
+        if (index <0 || index > (files.size()-1))
+        {
+            temp = false;
+        }
+        return temp;
+    }
 }
