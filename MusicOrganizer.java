@@ -59,4 +59,13 @@ public class MusicOrganizer
             files.remove(index);
         }
     }
+    
+    public void checkIdex (int index)
+    {
+        if (index <0 || index > (files.size()-1))
+        {
+            System.out.println("Error. El indice de archivo no es valido");
+            System.out.println("El indice debe estar contenido entre el número 0 y el número " + (files.size() -1));
+        }
+    }
 }
